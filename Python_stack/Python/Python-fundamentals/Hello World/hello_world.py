@@ -61,3 +61,9 @@ story="Once upon a time there was a beautiful princess named Ella"
 substring = story.endswith ("Ela")
 print(substring)
 
+
+
+
+
+
+

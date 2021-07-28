@@ -21,7 +21,7 @@ print("Hello " + str(name) + "!")	# with a +	-- this one should give us an error
 fave_food1 = "tacos"
 fave_food2 = "sushi"
 print("I love to eat {} and {}".format(fave_food1, fave_food2)) # with .format()
-print(f"I love to eat {fave_food1} and {fave_food2}") # with an f string
+print(f"I love to eat {fave_food1} and {fave_food2}") # with an f-string
 
 # NINJA BONUS: Spend a few minutes playing around with other string methods to see what’s out there!
 
@@ -37,16 +37,19 @@ print(fruits.lower())
 
 #string.count(substring): 
 
-gnr= "Knock-knock-knockin' on heaven's door, Knock-knock-knockin' on heaven's door, Knock-knock-knockin' on heaven's door, Knock-knock-knockin' on heaven's door, eh yeah"
+gnr= "Knock knock knockin' on heaven's door, Knock knock knockin' on heaven's door, Knock knock knockin' on heaven's door, Knock knock knockin' on heaven's door, eh yeah"
 
-substring = "heaven's"
+substring = "knock"
 count = gnr.count(substring)
 print("The count is", count)
+
+
 
 #string.isalnum()
 
 name = "CaRL02 C0SS1o"
-print(name.isalnum())
+print(name.isalnum())                   #will be false since the string cointains an empty space. 
+                                        #in order to be TRUE all the "spaces" have to be alphanumeric.
 
 name = "CaRL02C0SS1o"
 print(name.isalnum())
@@ -57,13 +60,23 @@ story="Once upon a time there was a beautiful princess named Ella"
 substring = story.endswith ("named Ella")
 print(substring)
 
+#OR
+
+substring = "Ella"
+endswith = story.endswith(substring)
+print(endswith)
+
+
+
 story="Once upon a time there was a beautiful princess named Ella"
 substring = story.endswith ("Ela")
 print(substring)
 
+#OR
 
-
-
+substring = "Ela"
+endswith = story.endswith(substring)
+print(endswith)
 
 
 

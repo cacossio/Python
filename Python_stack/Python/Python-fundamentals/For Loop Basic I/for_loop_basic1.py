@@ -1,9 +1,11 @@
 
 # 1- Basic - Print all integers from 0 to 150.
+
 for i in range(0,151):
     print(i)
 
 # 2- Multiples of Five - Print all the multiples of 5 from 5 to 1,000
+
 for i in range(5,1005,5):
     print(i)
 
@@ -36,8 +38,8 @@ for x in range(2018, 0, -4):
 
 
 lowNum = 2
-highNum = 100
-mult = 4
+highNum = 9
+mult = 3
 
 for x in range(lowNum, highNum + 1):
      if x % mult == 0:
